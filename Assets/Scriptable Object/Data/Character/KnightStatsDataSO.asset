@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0a546572453824783d6b27ad45eb07, type: 3}
+  m_Name: KnightStatsDataSO
+  m_EditorClassIdentifier: 
+  maxHp: 100
+  maxSkillGauge: 50
+  attackDamage01: 10
+  attackRange01: 1.3
+  attackDamage02: 0
+  attackRange02: 0
+  attackDamage03: 0
+  attackRange03: 0
+  defensePower: 10
