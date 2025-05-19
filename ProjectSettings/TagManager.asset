@@ -4,8 +4,11 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - PlayerUnit
-  - EnemyUnit
+  - GameLevelSlot
+  - PlayerCharSlot
+  - EnemyCharSlot
+  - PlayerCharacter
+  - EnemyCharacter
   layers:
   - Default
   - TransparentFX
@@ -54,6 +57,9 @@ TagManager:
     locked: 0
   - name: Character
     uniqueID: 1450994133
+    locked: 0
+  - name: UI HpBar
+    uniqueID: 3874075239
     locked: 0
   m_RenderingLayers:
   - Default

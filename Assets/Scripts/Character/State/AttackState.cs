@@ -5,24 +5,42 @@ public class AttackState : IBaseState
 {
     public CharacterStateMachine CharSM { get; set; }
 
+    private bool isAttacked;
+    private float attackIntervalTimer;
+
     public void Enter(CharacterStateMachine stateMachine)
     {
+        isAttacked = false;
+        attackIntervalTimer = 0f;
+
         CharSM = stateMachine;
 
         CharSM.isAttack = true;
         CharSM.animator.SetBool("isAttack", true);
 
+        CharSM.FlipCharacter();
+
     }
 
     public void LogicUpdate()
     {
-        // 動畫執行完畢後切換成Idle State
+        if (isAttacked) 
+            attackIntervalTimer += Time.deltaTime;
+
+        // 動畫執行完畢 => 等待攻擊間隔時間 => 切換成Idle State
         AnimatorStateInfo stateInfo = CharSM.animator.GetCurrentAnimatorStateInfo(0);
 
         if (stateInfo.IsTag("Attack") && stateInfo.normalizedTime >= 1.0f)
         {
-            CharSM.ChangeSate(CharSM.idleState);
-            return;
+            isAttacked = true;
+
+            if (attackIntervalTimer >= CharSM.charStats.currentAttackInterval)
+            {
+                CharSM.ChangeSate(CharSM.idleState);
+                return;
+
+            }
+
         }
 
 

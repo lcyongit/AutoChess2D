@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69b7a10c844339458dd6c0776925837, type: 3}
+  m_Name: CharacterDataListSO
+  m_EditorClassIdentifier: 
+  characterDetailsList:
+  - name: 1
+    prefab: {fileID: 3999975444175646452, guid: 00313c1b9bc678a4fb281e5350478a26, type: 3}
+    sprite: {fileID: -2875184811977189179, guid: 2e25bdb2ad6a68e42b6602aeac110764, type: 3}
+    maxHp: 100
+    maxSkillGauge: 50
+    moveSpeed: 5
+    attackDamage01: 10
+    attackInterval01: 0.2
+    attackRange01: 1.3
+    attackDamage02: 0
+    attackInterval02: 0
+    attackRange02: 0
+    attackDamage03: 0
+    attackInterval03: 0
+    attackRange03: 0
+    defensePower: 20
+  - name: 2
+    prefab: {fileID: 3999975444175646452, guid: b903e2204b92efc4e99843c7d388bb11, type: 3}
+    sprite: {fileID: 3465079563596065642, guid: 486dcfc060ae07c40b70e6cd642f80fc, type: 3}
+    maxHp: 200
+    maxSkillGauge: 50
+    moveSpeed: 7
+    attackDamage01: 15
+    attackInterval01: 0.3
+    attackRange01: 1.4
+    attackDamage02: 0
+    attackInterval02: 0
+    attackRange02: 0
+    attackDamage03: 0
+    attackInterval03: 0
+    attackRange03: 0
+    defensePower: 15
+  - name: 3
+    prefab: {fileID: 3999975444175646452, guid: f2380773a5c52524dae670beee4b2ec7, type: 3}
+    sprite: {fileID: 5420657165879536120, guid: 80fa106fe52c6f244958e18750605144, type: 3}
+    maxHp: 70
+    maxSkillGauge: 50
+    moveSpeed: 6
+    attackDamage01: 20
+    attackInterval01: 0.5
+    attackRange01: 10
+    attackDamage02: 0
+    attackInterval02: 0
+    attackRange02: 0
+    attackDamage03: 0
+    attackInterval03: 0
+    attackRange03: 0
+    defensePower: 10

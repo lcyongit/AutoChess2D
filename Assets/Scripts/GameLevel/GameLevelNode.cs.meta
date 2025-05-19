@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: d8b4026f0a324734b8d1c7db9e7cc711
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - clickGameLevelSlotEventSO: {fileID: 11400000, guid: 7fb8cab108977e647ab586859d6fcaf7, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

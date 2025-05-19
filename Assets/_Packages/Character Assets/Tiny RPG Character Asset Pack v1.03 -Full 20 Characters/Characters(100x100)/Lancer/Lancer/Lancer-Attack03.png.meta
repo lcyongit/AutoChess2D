@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -124,12 +124,12 @@ TextureImporter:
       name: Lancer-Attack03_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 42
-        width: 56
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 33
+        y: 43
+        width: 54
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,12 +146,12 @@ TextureImporter:
       name: Lancer-Attack03_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 43
-        width: 55
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 133
+        y: 44
+        width: 53
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: Lancer-Attack03_2
       rect:
         serializedVersion: 2
-        x: 232
-        y: 43
-        width: 55
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 233
+        y: 44
+        width: 53
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,12 +190,12 @@ TextureImporter:
       name: Lancer-Attack03_3
       rect:
         serializedVersion: 2
-        x: 332
-        y: 42
-        width: 55
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 333
+        y: 43
+        width: 53
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: Lancer-Attack03_4
       rect:
         serializedVersion: 2
-        x: 432
-        y: 42
-        width: 56
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 433
+        y: 43
+        width: 54
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,12 +234,12 @@ TextureImporter:
       name: Lancer-Attack03_5
       rect:
         serializedVersion: 2
-        x: 532
-        y: 42
-        width: 55
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 533
+        y: 43
+        width: 53
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: Lancer-Attack03_6
       rect:
         serializedVersion: 2
-        x: 632
-        y: 43
-        width: 55
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 633
+        y: 44
+        width: 53
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: Lancer-Attack03_7
       rect:
         serializedVersion: 2
-        x: 732
-        y: 42
-        width: 55
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 733
+        y: 43
+        width: 53
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 03550578f6580d74daf9d8fd890d2928
     internalID: 0
     vertices: []
     indices: 
@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lancer-Attack03_0: -5600802744640973356
+      Lancer-Attack03_1: 2734958393556707394
+      Lancer-Attack03_2: 2840812380775135278
+      Lancer-Attack03_3: -3315343419994440245
+      Lancer-Attack03_4: -8411949506173680519
+      Lancer-Attack03_5: -1456870129225611018
+      Lancer-Attack03_6: -3640756697096676886
+      Lancer-Attack03_7: -3063550135448874354
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

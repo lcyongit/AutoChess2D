@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1555e232213129c4891dc74afe894388, type: 3}
+  m_Name: PlayerSavedDataSO
+  m_EditorClassIdentifier: 
+  playerCurrentChosenGameLevelNode:
+    gameLevel: 1
+    gameLevelNode: {x: 1, y: 0}
+    toGameLevelNodeList: []
+    isFinished: 0
+    enemyList: 0200000002000000
+  gameLeveNodeSavedDataList:
+  - gameLevel: 0
+    gameLevelNode: {x: 0, y: 0}
+    toGameLevelNodeList:
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    isFinished: 1
+    enemyList: 
+  - gameLevel: 1
+    gameLevelNode: {x: 1, y: 0}
+    toGameLevelNodeList:
+    - {x: 2, y: 0}
+    - {x: 2, y: 1}
+    - {x: 2, y: 2}
+    isFinished: 0
+    enemyList: 0200000002000000
+  - gameLevel: 1
+    gameLevelNode: {x: 1, y: 1}
+    toGameLevelNodeList:
+    - {x: 2, y: 2}
+    isFinished: 0
+    enemyList: 0100000002000000
+  - gameLevel: 1
+    gameLevelNode: {x: 2, y: 0}
+    toGameLevelNodeList:
+    - {x: 3, y: 0}
+    isFinished: 0
+    enemyList: 0100000001000000
+  - gameLevel: 1
+    gameLevelNode: {x: 2, y: 1}
+    toGameLevelNodeList:
+    - {x: 3, y: 0}
+    isFinished: 0
+    enemyList: 0200000002000000
+  - gameLevel: 1
+    gameLevelNode: {x: 2, y: 2}
+    toGameLevelNodeList:
+    - {x: 3, y: 1}
+    - {x: 3, y: 2}
+    - {x: 3, y: 3}
+    isFinished: 0
+    enemyList: 0200000002000000
+  - gameLevel: 1
+    gameLevelNode: {x: 3, y: 0}
+    toGameLevelNodeList: []
+    isFinished: 0
+    enemyList: 0100000002000000
+  - gameLevel: 1
+    gameLevelNode: {x: 3, y: 1}
+    toGameLevelNodeList: []
+    isFinished: 0
+    enemyList: 0200000002000000
+  - gameLevel: 1
+    gameLevelNode: {x: 3, y: 2}
+    toGameLevelNodeList: []
+    isFinished: 0
+    enemyList: 0200000002000000
+  - gameLevel: 1
+    gameLevelNode: {x: 3, y: 3}
+    toGameLevelNodeList: []
+    isFinished: 0
+    enemyList: 0100000002000000
+  playerCharacterInfoList:
+  - characterName: 3
+    level: 1
+    starRate: 1
+    battleSlotPosOrder: {x: 0, y: 0}
+  - characterName: 3
+    level: 1
+    starRate: 1
+    battleSlotPosOrder: {x: 0, y: 1}
+  - characterName: 3
+    level: 1
+    starRate: 1
+    battleSlotPosOrder: {x: 0, y: 2}
+  - characterName: 3
+    level: 1
+    starRate: 1
+    battleSlotPosOrder: {x: 0, y: 3}
+  - characterName: 1
+    level: 1
+    starRate: 1
+    battleSlotPosOrder: {x: 0, y: 4}

@@ -1,12 +1,17 @@
+using System;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering;
 
 public class CharacterStateMachine : MonoBehaviour
 {
     [Header("Components")]
+    public CharacterBattleSystem charBS;
+    public CharacterStats charStats;
     public NavMeshAgent agent;
     public Animator animator;
-    public CharacterStats stats;
+    public SpriteRenderer spriteRenderer;
 
     [Header("Target Info")]
     public Transform target;
@@ -16,38 +21,40 @@ public class CharacterStateMachine : MonoBehaviour
     public IBaseState idleState = new IdleState();
     public IBaseState chaseState = new ChaseState();
     public IBaseState attackState = new AttackState();
+    public IBaseState deathState = new DeathState();
 
     [Header("State Check")]
     public bool isIdle;
     public bool isChase;
     public bool isAttack;
     public bool isHurt;
-    public bool isDeath;
+    public bool isDead;
+
+
 
     private void Awake()
     {
+        charBS = GetComponent<CharacterBattleSystem>();
+        charStats = GetComponent<CharacterStats>();
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        stats = GetComponent<CharacterStats>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
 
     private void Start()
     {
-        RegisterInBattleManager();
-
         Initialize();
-
-        if (target != null)
-        {
-            agent.destination = target.position;
-        }
 
     }
 
     private void Update()
     {
+        if (charBS.battleController.isBattlePreparation)
+            return;
+
         currentState.LogicUpdate();
+
     }
 
     private void FixedUpdate()
@@ -55,25 +62,17 @@ public class CharacterStateMachine : MonoBehaviour
         currentState.FixedUpdate();
     }
 
-    private void OnEnable()
-    {
+    //private void OnEnable()
+    //{
         
-    }
+    //}
 
-    private void OnDisable()
-    {
-        UnRegisterFromBattleManager();
-    }
+    //private void OnDisable()
+    //{
+        
+    //}
 
-    private void RegisterInBattleManager()
-    {
-        BattleManager.Instance.RegisterInList(this);
-    }
-
-    private void UnRegisterFromBattleManager()
-    {
-        BattleManager.Instance.UnRegisterFromList(this);
-    }
+    
 
     /// <summary>
     /// 初始化
@@ -106,9 +105,51 @@ public class CharacterStateMachine : MonoBehaviour
     /// <returns></returns>
     public bool SearchTarget()
     {
-        target = BattleManager.Instance.SearchTarget(this).transform;
+        if (!isDead)
+        {
+            CharacterBattleSystem targetCharBS = charBS.battleController.SearchTarget(charBS);
+            if (targetCharBS != null && !targetCharBS.charSM.isDead)
+                target = targetCharBS.transform;
+            else
+                target = null;
+        }
 
         return target != null;
+
+    }
+
+    /// <summary>
+    /// 翻轉角色
+    /// </summary>
+    public void FlipCharacter()
+    {
+        if (target != null)
+        {
+            float targetDirX = target.position.x - transform.position.x;
+
+            if (targetDirX >= 0f)
+                spriteRenderer.flipX = false;
+            else 
+                spriteRenderer.flipX = true;
+
+        }
+
+    }
+
+    /// <summary>
+    /// 偵測死亡狀態
+    /// </summary>
+    public void BeDead()
+    {
+        //FIXME: Tag name是否能直接抓取編輯器的tag name，而不是手動輸入
+        if (CompareTag("EnemyCharacter"))
+        {
+            CharacterDieEventSO.Instance.RaiseEvent();
+        }
+
+        ChangeSate(deathState);
+        return;
+
 
     }
 

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dbf49b586db609240b3ab5c19db1eaed
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hpBarPoint: {instanceID: 0}
+  - skillGaugeBarPoint: {instanceID: 0}
+  - characterUIBarPrefab: {fileID: 4659062032400758393, guid: 41dec0d29fd6b9e4f944c5b86a46ac13, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

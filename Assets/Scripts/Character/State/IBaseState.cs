@@ -11,6 +11,5 @@ public interface IBaseState
     public void FixedUpdate();
 
     public void Exit();
-
-
+    
 }

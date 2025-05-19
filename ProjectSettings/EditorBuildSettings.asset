@@ -8,6 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Persistent.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Battlefield.unity
+    guid: f12bbc7590d7db2429af792d1bd5c7f2
+  - enabled: 1
+    path: Assets/Scenes/GameLevelSelect.unity
+    guid: 57a8e5b3aedc5004db7577bd3f38766a
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 272f76816ffd4cd45a5e14be00ebc1d9
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: d1d1318781dbf8447ac817f6446af0e0, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

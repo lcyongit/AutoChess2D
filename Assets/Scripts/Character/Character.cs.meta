@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 096707b2d705c374bb55c80a3ceea8d4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - triggerCollider: {instanceID: 0}
+  - currentBattlefieldCharSlot: {instanceID: 0}
+  - characterRenderer: {instanceID: 0}
+  - clickBattleCharSlotEventSO: {fileID: 11400000, guid: 0d7f1dc976a7f534d90ecc185f9da9e6, type: 2}
+  - battleStartEventSO: {fileID: 11400000, guid: bede51ca6a0efa642bd6a98704495d98, type: 2}
+  - clickBattleCharacterEventSO: {fileID: 11400000, guid: 945dbc72ed30cbc4993d6e642798d11c, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

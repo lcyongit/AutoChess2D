@@ -15,6 +15,8 @@ public class ChaseState : IBaseState
 
     public void LogicUpdate()
     {
+        CharSM.FlipCharacter();
+
         if (CharSM.target == null)
         {
             CharSM.ChangeSate(CharSM.idleState);
@@ -34,8 +36,8 @@ public class ChaseState : IBaseState
     {
         CharSM.agent.isStopped = false;
         CharSM.agent.destination = CharSM.target.position;
-        CharSM.agent.stoppingDistance = CharSM.stats.currentAttackRange;
-
+        CharSM.agent.stoppingDistance = CharSM.charStats.currentAttackRange;
+        CharSM.agent.speed = CharSM.charStats.currentMoveSpeed;
     }
 
     public void Exit()

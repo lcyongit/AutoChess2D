@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3f4650219e2e87044b0b51051d990a4a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - currentCharacter: {instanceID: 0}
+  - clickBattleCharSlotEventSO: {fileID: 11400000, guid: 0d7f1dc976a7f534d90ecc185f9da9e6, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

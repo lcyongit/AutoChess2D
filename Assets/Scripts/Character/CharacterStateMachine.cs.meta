@@ -3,7 +3,14 @@ guid: f1db797fbeb49f94b8ce30ae16e67e4c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - charBS: {instanceID: 0}
+  - charStats: {instanceID: 0}
+  - agent: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - spriteRenderer: {instanceID: 0}
+  - target: {instanceID: 0}
+  - characterDieEventSO: {fileID: 11400000, guid: a7f2f5e0b4d63984c96ac3a880e565ec, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
